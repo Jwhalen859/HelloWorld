@@ -1,0 +1,11 @@
+<html>
+<head><title>Favorite Number</title>
+<script>
+n = prompt("What is your favorite number?");
+n++;
+alert("My favorite number is 1 more than that, " + n);
+</script>
+</head>
+<body>
+</body>
+</html>
