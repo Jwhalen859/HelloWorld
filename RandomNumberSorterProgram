@@ -6,6 +6,7 @@
    for (i=0; i<25; ++i) {
        var r = Math.floor(Math.random() * 100) + 1;
        if (r%2==0) even.push(r);
+       else odd.push(r);
 }
 document.write("Even numbers were: ");
 for (i=0; i < even.length; ++i)
