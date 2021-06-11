@@ -31,7 +31,7 @@ input value="Calculator" type=button onclick="calc()" >
        document.getElementById('result').innerHTML = num1-num2;
    else if (opr == 3) 
        document.getElementById('result').innerHTML = num1*num2;
-   else if (opr == 4)
+   else if (opr == 4) {
        if (num2 == 0)
           document.getElementById('result').innerHTML = "Divide by zero error.";
        else document.getElementById('result').innerHTML = num1/num2;
