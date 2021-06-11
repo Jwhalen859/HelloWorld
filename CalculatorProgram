@@ -1,0 +1,44 @@
+<html>
+<head><title>Calculator</title>
+</head>
+<body>
+<form name="calcForm">
+Select operation (1-4): <br><br>
+1. add<br>
+2. subtract <br>
+3. multiply<br>
+4. divide<br>
+<input name="op" type=text size=2><br><br>
+
+Enter 1st number:
+<input name="n1" type=text size=10><br><br>
+
+Enter 2nd number:
+<input name="n2" type=text size=10><br><br>
+
+result: <div id="result"></div><br><br>
+
+input value="Calculator" type=button onclick="calc()" >
+
+<script>
+   function calc() {
+   num1=Number(document.calcForm.n1.value);
+   num2=Number(document.calcForm.n2.value);
+   opr=Number(document.calcForm.op.value);
+   if (opr == 1)
+       document.getElementById('result').innerHTML = num1+num2;
+   else if (opr == 2)
+       document.getElementById('result').innerHTML = num1-num2;
+   else if (opr == 3) 
+       document.getElementById('result').innerHTML = num1*num2;
+   else if (opr == 4)
+       if (num2 == 0)
+          document.getElementById('result').innerHTML = "Divide by zero error.";
+       else document.getElementById('result').innerHTML = num1/num2;
+   }
+   else
+       document.getElementById('result').innerHTML = "Bad op! Select 1,2,3, or 4.";
+   }
+</script>
+</body>
+</html>
